@@ -1,0 +1,172 @@
+:root{
+    --dark-color: #19283f;
+    --green-color: #33d1cc;
+    --red-color: #ff3150;
+    --yellow-color: #ffc400;
+    --section-colo: #eff7fa;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    scroll-behavior: smooth;
+    font-family: 'Cairo', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.main-title{
+    position: relative;
+    display: flex;
+    justify-content:center;
+    color:var(--dark-color);
+    font-size: 40px;
+  }
+  .main-title::before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 4px;
+    background-color:var(--green-color);
+    bottom: -30px;
+    width:300px;
+    margin-bottom: 20px;
+  }
+/* start navbar */
+.navbar{
+    background-color: var(--dark-color);
+    
+} 
+.navbar .navbar-nav .nav-link{
+    color: white;
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover{
+    color:var(--green-color);
+}
+.navbar .navbar-brand{
+    color: var(--green-color);
+    font-size: 27px;
+    border-left: solid white 1px;
+    padding-left: 10px;
+}
+.up{
+    color: var(--green-color);
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+
+}
+.up:hover{
+    color: var(--red-color);
+    transition:0.7s;
+}
+.navbar .navbar-brand img{
+    margin-left:20px ;
+    border-radius:30px ;
+    border:white 1px solid;
+    padding: 3px;
+}
+.navbar .navbar-toggler{
+    font-size:30px ;
+    color:var(--secondary-color) ;
+    border-color: var(--secondary-color);
+}
+.navbar .navbar-toggler:focus{
+    box-shadow: none;
+}
+.login{
+    font-size: 30px;
+    color: var(--secondary-color);
+    margin-right:100px;
+}
+.login a{
+    margin: 5px;
+}
+.navbar .container svg{
+    font-size: 25px;
+    padding-left: 5px;
+}
+
+/* End navbar */
+/* Start Land */
+.land .top{
+    position: fixed;
+    background-color: #521bca;
+    bottom: 10px;
+    left: 10px;
+}
+.land {
+    background-image: url(/images/mainLanding\ .jpg);
+}
+.land .text h1{
+    color: var(--yellow-color);
+    font-family: 'Lalezar', system-ui;
+    font-size: 70px;
+}
+.land .text p{
+    color: var(--section-colo);
+}
+/* End land */
+
+/* Start sec4 Biology Arab Scientists */
+.teaches .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+.teaches .container .card{
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px 0px #585858ab;
+}
+.teaches .container .card:hover{
+    transform:scale(1.1);
+    transition: 1s ease-in-out;
+    box-shadow: -20px  0px 20px 0px #000000ab;
+    border-right:2px solid rgb(167, 167, 167);
+    border-bottom:2px solid rgb(155, 155, 155);
+
+}
+/* End sec4 Biology Arab Scientists */
+/* Start Footer */
+.footer{
+    background-color:var(--dark-color);
+}
+.footer-image{
+    max-width: 50px;
+}
+.footer .copyright>span{
+    color: #53eac7;
+}
+.footer .copyright div span{
+    color: #fde300;
+}
+.footer .contact .ul svg{
+    width: 20px;
+    height: 20px;
+}
+.footer .facebook{
+    color:#1877f2 ;
+}
+.footer .twitter{
+    color:#1da1f2 ;
+}
+.footer .linkedin{
+    color: #0077b5;
+}
+.footer .youtube{
+    color:#ff0000 ;
+}
+
+/* End Footer */
