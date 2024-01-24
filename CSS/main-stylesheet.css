@@ -106,7 +106,7 @@ a{
     left: 10px;
 }
 .land {
-    background-image: url(/images/mainLanding\ .jpg);
+    background-image: url(/images/mainLanding.jpg);
 }
 .land .text h1{
     color: var(--yellow-color);
